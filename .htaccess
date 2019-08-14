@@ -1,0 +1,24 @@
+#Desativar a indexação de diretórios faz com que os arquivos não sejam listados caso
+#o usuário digite um caminho de diretório no navegador
+
+Options -Indexes
+
+
+#"Desativa" o processamento de URL pelo Apache, para que possamos redirecinar todos os
+#requests para o index.php, onde poderemos tratar manualmente cada requisição
+
+RewriteEngine on
+# RewriteBase /
+
+
+#Caso seja acessado um caminho de um arquivo existente no servidor, o arquivo será baixado
+#automaticamente, caso contrário, usuário será redirecionado para index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(css|js|icon|zip|rar|png|jpg|gif|pdf)$ index.php [L]
+
+
+#Torna o código fonte do template acessível ao usuário
+
+AddType application/x-httpd-php .php .phtml
