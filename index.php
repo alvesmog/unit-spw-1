@@ -24,3 +24,4 @@ spl_autoload_register("autoloadFunction");
 //Testando o router
 $router = new RouterController();
 $router->process(array($_SERVER['REQUEST_URI']));
+$router->renderView();
