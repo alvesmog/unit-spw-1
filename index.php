@@ -12,13 +12,15 @@ mb_internal_encoding("UTF-8");
 function autoloadFunction($class)
 {
     if (preg_match('/Controller$/', $class))
-        require("controllers/" . $class . ".php");
+        require("app/controllers/" . $class . ".php");
     else
-        require("models/" . $class . ".php");
+        require("app/models/" . $class . ".php");
 }
 
 //Faz com que a função carregue automaticamente
 
 spl_autoload_register("autoloadFunction");
 
-?>
+//Testando o router
+$router = new RouterController();
+$router->process(array($_SERVER['REQUEST_URI']));
