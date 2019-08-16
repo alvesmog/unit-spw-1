@@ -5,18 +5,18 @@
     </div>
     <div class="card mt-2 mb-2 ml-2 mr-2">
         <div class="card-body">
-            <form>
+            <form id="form1">
                 <div class="form-group">
                     <div class="form-row mb-3">
                         <div class="col-md-6">
                             <div class="form-label-group">
-                                <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
+                                <input type="text" id="cod" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
                                 <label for="firstName">Cód. Convênio</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-label-group">
-                                <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
+                                <input type="text" id="nome" class="form-control" placeholder="Last name" required="required">
                                 <label for="lastName">Nome convênio</label>
                             </div>
                         </div>
@@ -24,33 +24,32 @@
                     <div class="form-row mb-3">
                         <div class="col">
                             <select id="banco" class="form-control" required="required">
-                                <option value="">Banco</option>
+                                <option value="1">Banco</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-row mb-3">
                         <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Sequencial" required="required">
+                            <input id="sequencial" type="text" class="form-control" placeholder="Sequencial" required="required">
                         </div>
                         <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Agência" required="required">
+                            <input id="agencia" type="text" class="form-control" placeholder="Agência" required="required">
                         </div>
                         <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Conta" required="required">
+                            <input id="conta" type="text" class="form-control" placeholder="Conta" required="required">
                         </div>
                         <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Dígito" required="required">
+                            <input id="digito" type="text" class="form-control" placeholder="Dígito" required="required">
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="col-md-3 col-lg-2">
-                            <a href="#" class="btn btn-success btn-block" href="login.html">Cadastrar</a>
-                        </div>
+                        <button type="submit" form="form1" value="Submit" class="btn btn-success">Cadastrar</button>
                     </div>
                 </div>
-            </form>
         </div>
+        </form>
     </div>
+</div>
 </div>
 
 <div class="form-group ml-2">
@@ -76,8 +75,8 @@
                 <td>Exemplo</td>
                 <td>Banco qualquer</td>
                 <td>
-                    <button type="button" class="fas fa-pen" aria-hidden="true"></button>      
-                    <button type="button" class="fas fa-trash" aria-hidden="true"></button>      
+                    <button type="button" class="fas fa-pen" aria-hidden="true"></button>
+                    <button type="button" class="fas fa-trash" aria-hidden="true"></button>
                 </td>
             </tr>
         </tbody>
