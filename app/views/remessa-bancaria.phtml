@@ -3,39 +3,36 @@
         <i class="fas fa-table"></i>
         Remessas bancárias
     </div>
-    <div class="card mt-2 mb-2 ml-2">
-        <div class="card-body">
+
+    <div class="card mt-2 mb-2 ml-2 mr-2">
+        <div class="card-body col-lg-12">
             <form>
                 <div class="form-group">
+                    <label for="nomeDoArquivo">Nome do arquivo</label>
                     <div class="form-row">
-                        <div class="col-md-4">
-                            <div class="form-label-group">
-                                <label for="nomeDoArquivo">Nome do arquivo</label>
-                                <input type="text" id="nomeDoArquivo" class="form-control" required="required" autofocus="autofocus">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
 
+                        <div class="input-group col-lg-4">
+                            <input type="text" id="nomeDoArquivo" class="form-control" required="required" autofocus="autofocus">
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
-                                <label for="inputEmail">Convênio</label>
-                            </div>
+
+                        <div class="input-group col-lg-3">
+                            <select id="convenio" class="form-control" required="required">
+                            </select>
+                            <span class="input-group-btn">
+                                <a href="cadastrarconvenio">
+                                    <i class="fas fa-plus-circle fa-2x" height="20" width="20"></i>
+                                </a>
+                            </span>
                         </div>
-                        <div class="col-md-1">
-                            <a href="cadastrarconvenio">
-                                <i class="fas fa-plus-circle fa-2x" height="20" width="20"></i>
-                            </a>
-                        </div>
-                        <div class="col-md-1">
+
+                        <div class="col-lg-1">
                             <a href="remessa" class="btn btn-primary btn-block" href="login.html">Processar</a>
                         </div>
+                        
                     </div>
                 </div>
+            </form>
         </div>
-
-        </form>
     </div>
 
     <div class="table-responsive">

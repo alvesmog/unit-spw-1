@@ -1,4 +1,4 @@
-<div class="card mb-12">
+<div class="card mb-3">
     <div class="card-header bg-primary text-light">
         <i class="fas fa-table"></i>
         Convênios bancários
@@ -7,52 +7,76 @@
         <div class="card-body">
             <form>
                 <div class="form-group">
-                    <div class="form-row">
-                        <div class="col-md-4">
+                    <div class="form-row mb-3">
+                        <div class="col-md-6">
                             <div class="form-label-group">
                                 <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
                                 <label for="firstName">Cód. Convênio</label>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-label-group">
                                 <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
                                 <label for="lastName">Nome convênio</label>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
-                                <label for="inputEmail">Banco</label>
-                            </div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <div class="col">
+                            <select id="banco" class="form-control" required="required">
+                                <option value="">Banco</option>
+                            </select>
                         </div>
-                        <div class="col-md-1">
-                            <a href="#"class="btn btn-success btn-block" href="login.html">Cadastrar</a>
+                    </div>
+                    <div class="form-row mb-3">
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Sequencial" required="required">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Agência" required="required">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Conta" required="required">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Dígito" required="required">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-2">
+                            <a href="#" class="btn btn-success btn-block" href="login.html">Cadastrar</a>
                         </div>
                     </div>
                 </div>
+            </form>
         </div>
-
-        </form>
     </div>
+</div>
 
-    <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Nome</th>
-                    <th>Banco</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>123</td>
-                    <td>Exemplo</td>
-                    <td>Banco qualquer</td>
-                </tr>
-            </tbody>
-        </table>
+<div class="form-group ml-2">
+<label for="buscarConvenio">Buscar convênio</label>
+    <div class="form-row">
+        <input type="text" id="buscarConvenio" class="form-control col-md-2">
     </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Banco</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>Exemplo</td>
+                <td>Banco qualquer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 </div>
