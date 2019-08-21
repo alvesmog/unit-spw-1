@@ -21,6 +21,9 @@ function autoloadFunction($class)
 
 spl_autoload_register("autoloadFunction");
 
+// Conecta ao banco de dados
+Db::connect("127.0.0.1", "root", "", "dbspw1");
+
 //Testando o router
 $router = new RouterController();
 $router->process(array($_SERVER['REQUEST_URI']));

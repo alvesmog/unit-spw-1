@@ -70,15 +70,15 @@
             </tr>
         </thead>
         <tbody>
+            <?php foreach ($convenio as $convenio) : ?>
             <tr>
-                <td>123</td>
-                <td>Exemplo</td>
-                <td>Banco qualquer</td>
                 <td>
-                    <button type="button" class="fas fa-pen" aria-hidden="true"></button>
-                    <button type="button" class="fas fa-trash" aria-hidden="true"></button>
+                    <?= $convenio['cod'] ?>
+                    <?= $convenio['nome'] ?>
+                    <?= $convenio['banco'] ?>
                 </td>
             </tr>
+            <?php endforeach ?>
         </tbody>
     </table>
 </div>
